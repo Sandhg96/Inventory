@@ -1,10 +1,10 @@
 package lk.ac.kln.fct.learn.generics.core;
 
-public class Entry<K, T> {
+public class Entry<K, V> {
 	private K key;
-	private T value;
+	private V value;
 	
-	public Entry(K key, T value) {
+	public Entry(K key, V value) {
 		this.key = key;
 		this.value = value;
 	}
@@ -17,11 +17,11 @@ public class Entry<K, T> {
 		this.key = key;
 	}
 	
-	public T getValue() {
+	public V getValue() {
 		return value;
 	}
 	
-	public void setValue(T value) {
+	public void setValue(V value) {
 		this.value = value;
 	}	
 }
